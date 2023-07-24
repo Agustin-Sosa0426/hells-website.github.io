@@ -8,21 +8,32 @@ body{
 }
 
 header{
-    background-color: rgb(127, 20, 20);
+    background-color: rgb(57, 51, 51);
     color: white;
-    padding: 3rem 2rem;
+    padding: 3rem 2rem;  
+    
+}
+
+
+#gym-info {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 header img {
   position: relative;
-  float: right ;
-  max-width: 100px;
+  float:none;
+  max-width: 500px;
   min-width: none;
   /*right: -1080px;
   bottom: 130px;*/
-  background-color: rgb(127, 20, 20) ;
+  background-color: rgb(57, 51, 51) ;
   
 }
+
+
   
 
 header h1 {
@@ -47,7 +58,7 @@ header h3 {
 section article{
     transition: box-shadow 0.3s ease;
     background-color: rgb(156, 26, 26);
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     border-radius: 0.5rem ;
     padding: 0.25rem 0;
     cursor: pointer;
@@ -76,17 +87,11 @@ footer section{
     float: right;
 }
 
-footer a.instagram-link {
+/*footer a.instagram-link {
      float:right;
-}
+}*/
 
-footer a.gmail-link {
-  position: relative;
-  float: right;
 
-  /*right: -950px;
-  bottom: 0px;*/
-}
 
 footer a {
     transition: color 0.3s ease;
@@ -97,6 +102,47 @@ footer a {
 footer a:hover {
     color: cornflowerblue;
 }
+
+
+.slider-frame {
+	width: 900px;
+    height: auto;
+	margin: 50px auto 0;
+	overflow: hidden;
+    box-shadow: 0.0.1rem 0.4rem rgb(255, 255, 255);
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+    
+} 
 
 
   
